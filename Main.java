@@ -1,0 +1,51 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        int r = 0, c = 0, a = 0;
+        int q = 0;
+
+        int[][] arr = new int[6][6];
+
+        for(int z = 0; a<6*6-1; z++)
+
+        {
+            for(int j=0; j<6-q; j++)
+            {
+                arr [r][c++] = a++;
+            }
+            c--;
+            ++q;
+
+            for(int k=0; k<6-q; k++)
+            {
+                arr[++r][c]= ++a;
+            }
+
+            for(int l=0; l<6-q; l++)
+            {
+                arr [r][--c] = ++a;
+            }
+            ++q;
+
+            for(int m=0; m<6-q; m++)
+            {
+                arr [--r][c]= ++a;
+            }
+            c++;
+        }
+
+        for(int d=0; d<6; d++)
+        {
+            for(int s=0; s<6; s++)
+            {
+                System.out.print(arr [d][s]+"\t");
+            }
+            System.out.println();
+        }
+
+    }
+
+}
